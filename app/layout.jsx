@@ -1,4 +1,5 @@
 import '@/assets/styles/globals.css';
+import Navbar from '@/components/Navbar';
 
 export const metadata = {
   title: 'Property Webapp | Next.js 14',
@@ -9,7 +10,10 @@ export const metadata = {
 function Layout({ children }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
