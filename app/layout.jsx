@@ -1,11 +1,9 @@
-import React from 'react';
+import '@/assets/styles/globals.css';
 
-function Layout(props) {
+function Layout({ children }) {
   return (
     <html>
-      <body>
-        <main>New Layout</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
